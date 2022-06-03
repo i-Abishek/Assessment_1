@@ -8,15 +8,17 @@ four million, find the sum of the even-valued terms.*/
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int t1 = 0, t2 = 1, nextTerm = 0,sum=0;
-    nextTerm = t1 + t2;
+    int term_1 = 0, term_2 = 1, nextTerm = 0, sum=0;
+    nextTerm = term_1 + term_2;
     while(nextTerm<=4000000) {
     if(nextTerm%2==0){
         sum+=nextTerm;
     }
-    t1 = t2;
-    t2 = nextTerm;
-    nextTerm = t1 + t2;
+    term_1 = term_2;
+    term_2 = nextTerm;
+    nextTerm = term_1 + term_2;
   }
   cout<<sum;
 }
+
+
