@@ -6,21 +6,21 @@ Find the largest palindrome made from the product of two 3-digit numbers.*/
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    int i,j,product,max = 0,temp;
+    int i,j,product,maximum = 0,temp;
     for(i=100;i<=999;i++){
         for(j=100;j<=999;j++){
             product = i*j;
             temp = product;
             int reverse=0;
             while(temp){
-            reverse = 10*reverse+(temp%10);
+            reverse = 10 * reverse+(temp%10);
             temp/=10;
     }
-            if(reverse == product && product > max){
-                max = product;
+            if(reverse == product && product > maximum){
+                maximum = product;
             }
         }
     }
-    cout<<max;
+    cout<<maximum;
     return 0;
 }
