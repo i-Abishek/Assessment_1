@@ -8,7 +8,7 @@ using namespace std;
 int main(){
     int sumOfMultiples = 0;
     for(int itr = 1; itr < 1000; itr++){
-        if(i%3 == 0||itr%5 == 0){
+        if(itr%3 == 0||itr%5 == 0){
             sumOfMultiples=sumOfMultiples+itr;
         }
     }
