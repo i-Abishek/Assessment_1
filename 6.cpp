@@ -2,12 +2,14 @@
 using namespace std;
 int main()
 {
-  unsigned sum_1 = 0, sum_2 = 0, i;
+  unsigned sumOfSquare = 0, squareOfSum = 0, itr;
 
-  for (i = 1; i <= 100; i++) {
-    sum_1 += i*i;
-    sum_2 += i;
+  for (itr = 1; itr <= 100; itr++) {
+    sumOfSquare += itr*itr;
+    squareOfSum  += itr;
   }
-  cout<<sum_2*sum_2 - sum_1;
+  squareOfSum*=squareOfSum;
+  cout<<squareOfSum - sumOfSquare;
+  
   return 0;
 }
