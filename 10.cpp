@@ -48,6 +48,5 @@ if (prime==true){
 		number+=2;
 	}
 	cout<< total;
-	
-	return 0;
+	return 0
 }
